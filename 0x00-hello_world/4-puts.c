@@ -1,37 +1,26 @@
-/*
- *
- *  * File: 4-puts.c
- *
- *   * Auth: Muhammed Abdulrahaman Adinoyi
- *
- *    */
-
-
-
 #include <stdio.h>
 
 
 
 /**
  *
- *  * main - Prints "Programming is like building a multilingual
+ *  * main - Entry point
  *
- *   *                puzzle, followed by a new line.
+ *   *
  *
- *    *
+ *    * Return: Always 0 (Success)
  *
- *     * Return: Always 0.
- *
- *      */
+ *     */
+
+
 
 int main(void)
 
-{
+{	char putsVal[] = "\"Programming is like building a multilingual puzzle";
 
-		puts("\"Programming is like building a multilingual puzzle");
-
-
+		puts(putsVal);
 
 			return (0);
 
 }
+
