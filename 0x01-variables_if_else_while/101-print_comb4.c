@@ -18,7 +18,7 @@ int main(void)
 		{
 			for (z = y + 1; z <= '9'; z++)
 			{
-				if ((y != x) != z)			
+				if ((y != x) != z)
 				{
 					putchar(x);
 					putchar(y);
@@ -26,7 +26,7 @@ int main(void)
 
 					if (x == '7' && y == '8')
 						continue;
-									
+
 					putchar(',');
 					putchar(' ');
 				}
