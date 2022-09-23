@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		{
 			if (nots[c] == str[i])
 				trigger = 1;
-		}
+		}					
 
 		if (trigger)
 		{
