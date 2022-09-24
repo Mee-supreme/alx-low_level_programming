@@ -1,37 +1,21 @@
 #include "main.h"
 
 /**
- * print_number - A function that prints an interger
- *
- * @n: An interger.
- *
- * Return: always 0.
+ * print_number - Prints an integer.
+ * @n: The integer to be printed.
  */
-
 void print_number(int n)
 {
-	unsigned int i, j, k;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
-		_putchar(45);
-		i = n * -1;
-	}
-	else
-	{
-		i = n;
-	}
-	j = i;
-	k = 1;
-
-	while (j > 9)
-	{
-		j /= 10;
-		k *= 10;
-	}
-	for (; k >= 1; k /= 10)
-	{
-		_putchar(((i / k) % 10) + 48);
+		_putchar('-');
+		num = -num;
 	}
 
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
