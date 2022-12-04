@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	total_lett = write(STDOUT_FILENO, buffer, read_lett);
-	
+
 	close(fd);
 	return (total_lett);
 }
